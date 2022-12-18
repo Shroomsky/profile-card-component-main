@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 355px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185deg, 75%, 39%);
+}
+
+.circle-top {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 65vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg-pattern-top.svg);
+  background-position-y: 100%;
+  background-position-x: 100%;
+}
+
+.circle-bottom {
+  position: absolute;
+  width: 55vw;
+  height: 50vh;
+  top: 45%;
+  left: 45%;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg-pattern-bottom.svg);
+}
+
+.fontSize {
+  font-size: 18px;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  margin: 0 auto;
+  min-width: 340px;
+}
+
+.card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.card-img {
+  background-image: url(../images/bg-pattern-card.svg);
+  width: 100%;
+  height: 120px;
+}
+.card-name {
+  height: 80px;
+  text-align: center;
+  margin-top: 70px;
+  font-weight: 700;
+}
+.card-name p {
+  padding: 6px;
+}
+.card-name p span {
+  font-weight: 400;
+  color: hsl(227deg, 10%, 46%);
+}
+.card-stat {
+  border-top: 1px solid hsla(0deg, 0%, 59%, 0.655);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-stat-item {
+  text-align: center;
+}
+.card-stat-item p {
+  font-weight: 700;
+}
+.card-stat-item span {
+  font-weight: 400;
+  color: hsl(227deg, 10%, 46%);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.profile-photo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/image-victor.jpg);
+  background-size: cover;
+  width: 110px;
+  height: 110px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.footer {
+  z-index: 5;
+  flex-shrink: 0;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(26, 1, 31, 0.601);
+}
+.footer .attribution {
+  text-align: center;
+}
+.footer .attribution a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+  .circle-top {
+    position: absolute;
+    width: 70vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-pattern-top.svg);
+    background-position: 0 120%;
+  }
+  .circle-bottom {
+    position: absolute;
+    width: 55vw;
+    height: 55vh;
+    top: 45%;
+    left: 45%;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-pattern-bottom.svg);
+    background-size: 120%;
+  }
+}/*# sourceMappingURL=style.css.map */

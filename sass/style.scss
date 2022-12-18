@@ -1,0 +1,145 @@
+@use "./colors" as colors;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	min-width: 355px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: "Kumbh Sans", sans-serif;
+	background-color: colors.$Dark_cyan;
+}
+
+.circle-top {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 65vw;
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-image: url(../images/bg-pattern-top.svg);
+	background-position-y: 100%;
+	background-position-x: 100%;
+}
+.circle-bottom {
+	position: absolute;
+	width: 55vw;
+	height: 50vh;
+	top: 45%;
+	left: 45%;
+	background-repeat: no-repeat;
+	background-image: url(../images/bg-pattern-bottom.svg);
+}
+
+.fontSize {
+	font-size: 18px;
+}
+
+.wrapper {
+	flex: 1 0 auto;
+	margin: 0 auto;
+	min-width: 340px;
+}
+
+.card {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: #fff;
+	&-img {
+		background-image: url(../images/bg-pattern-card.svg);
+		width: 100%;
+		height: 120px;
+	}
+	&-name {
+		height: 80px;
+		text-align: center;
+		margin-top: 70px;
+		font-weight: 700;
+		& p {
+			padding: 6px;
+			& span {
+				font-weight: 400;
+				color: colors.$Dark_grayish_blue;
+			}
+		}
+	}
+	&-stat {
+		border-top: 1px solid colors.$Dark_gray;
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		&-item {
+			text-align: center;
+			& p {
+				font-weight: 700;
+			}
+			& span {
+				font-weight: 400;
+				color: colors.$Dark_grayish_blue;
+				font-size: 11px;
+				letter-spacing: 2px;
+			}
+		}
+	}
+}
+.profile-photo {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(../images/image-victor.jpg);
+	background-size: cover;
+	width: 110px;
+	height: 110px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+.footer {
+	z-index: 5;
+	flex-shrink: 0;
+	padding: 20px;
+	color: #fff;
+	background-color: rgba(26, 1, 31, 0.601);
+	& .attribution {
+		text-align: center;
+		& a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+@media (min-width: 1440px) {
+	.circle-top {
+		position: absolute;
+		width: 70vw;
+		height: 60vh;
+		background-repeat: no-repeat;
+		background-image: url(../images/bg-pattern-top.svg);
+		background-position: 0 120%;
+	}
+	.circle-bottom {
+		position: absolute;
+		width: 55vw;
+		height: 55vh;
+		top: 45%;
+		left: 45%;
+		background-repeat: no-repeat;
+		background-image: url(../images/bg-pattern-bottom.svg);
+		background-size: 120%;
+	}
+}
