@@ -23,12 +23,6 @@ body {
 	background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
-
-
-.fontSize {
-	font-size: 18px;
-}
-
 .wrapper {
 	flex: 1 0 auto;
 	margin: 0 auto;
@@ -56,6 +50,7 @@ body {
 		font-weight: 700;
 		& h2 {
 			padding: 6px;
+			color:colors.$gery_dark_desaturated_blue;
 			& span {
 				font-weight: 400;
 				color: colors.$Dark_grayish_blue;
@@ -77,6 +72,9 @@ body {
 			list-style: none;
 			text-align: center;
 			font-weight: 700;
+			& li{
+				color:colors.$gery_dark_desaturated_blue;
+			}
 			& li:nth-child(even) {
 				font-weight: 400;
 				color: colors.$Dark_grayish_blue;

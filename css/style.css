@@ -20,10 +20,6 @@ body {
   background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
-.fontSize {
-  font-size: 18px;
-}
-
 .wrapper {
   flex: 1 0 auto;
   margin: 0 auto;
@@ -53,6 +49,7 @@ body {
 }
 .card-name h2 {
   padding: 6px;
+  color: hsl(229deg, 23%, 23%);
 }
 .card-name h2 span {
   font-weight: 400;
@@ -74,6 +71,9 @@ body {
   list-style: none;
   text-align: center;
   font-weight: 700;
+}
+.card-stat ul li {
+  color: hsl(229deg, 23%, 23%);
 }
 .card-stat ul li:nth-child(even) {
   font-weight: 400;
