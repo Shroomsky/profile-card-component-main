@@ -17,6 +17,10 @@ body {
 	flex-direction: column;
 	font-family: "Kumbh Sans", sans-serif;
 	background-color: colors.$Dark_cyan;
+	background-image: url(../images/bg-pattern-top.svg),
+		url(../images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 .circle-top {
@@ -75,9 +79,10 @@ body {
 				font-weight: 400;
 				color: colors.$Dark_grayish_blue;
 			}
-		}& p {
+		}
+		& p {
 			font-weight: 400;
-				color: colors.$Dark_grayish_blue;
+			color: colors.$Dark_grayish_blue;
 		}
 	}
 	&-stat {
@@ -91,14 +96,13 @@ body {
 			list-style: none;
 			text-align: center;
 			font-weight: 700;
-			& li:nth-child(even){
+			& li:nth-child(even) {
 				font-weight: 400;
 				color: colors.$Dark_grayish_blue;
 				font-size: 11px;
 				letter-spacing: 2px;
 			}
-		} 
-	
+		}
 	}
 }
 .profile-photo {
@@ -125,23 +129,4 @@ body {
 		}
 	}
 }
-@media (min-width: 1440px) {
-	.circle-top {
-		position: absolute;
-		width: 70vw;
-		height: 60vh;
-		background-repeat: no-repeat;
-		background-image: url(../images/bg-pattern-top.svg);
-		background-position: 0 120%;
-	}
-	.circle-bottom {
-		position: absolute;
-		width: 55vw;
-		height: 55vh;
-		top: 45%;
-		left: 45%;
-		background-repeat: no-repeat;
-		background-image: url(../images/bg-pattern-bottom.svg);
-		background-size: 120%;
-	}
-}
+
