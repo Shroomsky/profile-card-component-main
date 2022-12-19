@@ -8,7 +8,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-  - [Built with](#built-with) 
+  - [Built with](#built-with)
 - [Author](#author)
 
 
@@ -17,6 +17,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### The challenge
 
 - Build out the project to the designs provided
+
+background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 
 ### Screenshot
 
